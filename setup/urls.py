@@ -5,7 +5,8 @@ from rest_framework import routers
 from clientes.views import ClienteViewSet
 
 router = routers.DefaultRouter()
-router.register('clientes', ClienteViewSet)
+router.register('clientes', ClienteViewSet, basename='Clientes')
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
